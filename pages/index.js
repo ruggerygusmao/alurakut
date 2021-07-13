@@ -14,12 +14,12 @@ function ProfileSidebar(propriedades){
 export default function Home() {
   const githubUser = 'ruggerygusmao';
   const pessoasFavoritas = [
-    'juunegreiros',
+    'wildici',
     'omariosouto',
     'peas',
-    'rafaballerini',
-    'marcobrunodev',
-    'felipefialho',
+    'gustavoguanabara',
+    'cairosousasilva',
+    'MatheusPenha',
   ]
 
   return (
@@ -36,9 +36,7 @@ export default function Home() {
        </h1>
 
        <OrkutNostalgicIconSet />
-      </Box>
-
-      
+      </Box> 
     </div>
     <div className="profileRelationsArea" style={{gridArea: 'profileRelationsArea'}}>
       <Box>
@@ -57,10 +55,9 @@ export default function Home() {
             </li>
         )
           })}
-           </ul>
+          </ul>
            </ProfileRelationsBoxWrapper>
       </Box>
-     
       <Box>
         Comunidades
       </Box>
