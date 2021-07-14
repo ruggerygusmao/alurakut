@@ -55,6 +55,15 @@ export default function Home() {
     'MatheusPenha',
   ]
 
+  //0 - Pegar o array de dados do github
+  const seguidores = fetch("https://api.github.com/users/ruggerygusmao/followers")
+  .then(function (respostaDoServidor){
+    return respostaDoServidor.json();
+  })
+  .then(function(respostaCompleta){
+    console.log(respostaCompleta)
+  })
+
   return (
    <>
    <AlurakutMenu githubUser={githubUser} />

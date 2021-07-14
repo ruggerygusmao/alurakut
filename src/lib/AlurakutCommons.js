@@ -55,7 +55,7 @@ export function AlurakutMenu({ githubUser }) {
 AlurakutMenu.Wrapper = styled.header`
   width: 100%;
   .alurakutMenuProfileSidebar {
-    background: white;
+    background: #3a3b3c;
     position: fixed;
     z-index: 100;
     padding: 46px;
@@ -184,9 +184,9 @@ function AlurakutMenuProfileSidebar({ githubUser }) {
 // AlurakutProfileSidebarMenuDefault
 // ================================================================================================================
 export function AlurakutProfileSidebarMenuDefault() {
-  return (
+  return ( 
     <AlurakutProfileSidebarMenuDefault.Wrapper>
-      <nav>
+      <nav className="nav">
         <a href="/">
           <img src={`${BASE_URL}/icons/user.svg`} />
             Perfil
@@ -220,7 +220,9 @@ export function AlurakutProfileSidebarMenuDefault() {
 }
 AlurakutProfileSidebarMenuDefault.Wrapper = styled.div`
 
-  background: #333333;
+  nav{
+    background: #3a3b3c;
+  }
 
   a {
     font-size: 12px;

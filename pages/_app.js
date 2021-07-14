@@ -27,10 +27,6 @@ body {
     display: block;
   }
 
-  .kEuhLI .alurakutMenuProfileSidebar{
-    background: #333333;
-  }
-
   .alurakutMenuProfileSidebar #menuHamburguer{
     max-width: 50%;
   }
