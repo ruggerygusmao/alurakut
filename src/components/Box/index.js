@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 
 const Box = styled.div`
-  background: #FFFFFF;
+  background: #FFFFFF1A;
   border-radius: 8px;
   padding: 16px;
+
   /* CSS Pré-Pronto */
   margin-bottom: 10px;
   .boxLink {
     font-size: 14px;
-    color: #2E7BB4;
+    color: #E4E6EB;
     text-decoration: none;
     font-weight: 800;
   }
@@ -16,17 +17,19 @@ const Box = styled.div`
     font-size: 32px;
     font-weight: 400;
     margin-bottom: 20px;
+    color: #E4E6EB;
   }
   .subTitle {
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 20px;
+    color: #E4E6EB;
   }
   .smallTitle {
     margin-bottom: 20px;
     font-size: 16px;
     font-weight: 700;
-    color: #333333;
+    color: #E4E6EB;
     margin-bottom: 20px;
   }
   hr {
@@ -37,14 +40,14 @@ const Box = styled.div`
   }
   input {
     width: 100%;
-    background-color: #F4F4F4;
-    color: #333333;
+    background-color: #3A3B3C;
+    color: #B0B3B8;
     border: 0;
     padding: 14px 16px;
     margin-bottom: 14px;
     border-radius: 10000px;
     ::placeholder {
-      color: #333333;
+      color: #B0B3B8;
       opacity: 1;
     }
   }

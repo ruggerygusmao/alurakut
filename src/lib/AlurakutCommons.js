@@ -54,7 +54,6 @@ export function AlurakutMenu({ githubUser }) {
 }
 AlurakutMenu.Wrapper = styled.header`
   width: 100%;
-  background-color: #308BC5;
   .alurakutMenuProfileSidebar {
     background: white;
     position: fixed;
@@ -80,7 +79,7 @@ AlurakutMenu.Wrapper = styled.header`
     }
     .boxLink {
       font-size: 18px;
-      color: #2E7BB4;
+      color: #E4E6EB;
       -webkit-text-decoration: none;
       text-decoration: none;
       font-weight: 800;
@@ -93,7 +92,6 @@ AlurakutMenu.Wrapper = styled.header`
     }
   }
   .container {
-    background-color: #308BC5;
     padding: 7px 16px;
     max-width: 1110px;
     margin: auto;
@@ -139,8 +137,8 @@ AlurakutMenu.Wrapper = styled.header`
       }
     }
     input {
-      color: #ffffff;
-      background: #5579A1;
+      color: #E4E6EB;
+      background: #504d4da7;
       padding: 10px 42px;
       border: 0;
       background-image: url(${`${BASE_URL}/icons/search.svg`});
@@ -156,7 +154,7 @@ AlurakutMenu.Wrapper = styled.header`
   }
 `;
 AlurakutMenu.Logo = styled.img`
-  background-color: #ffffff;
+  background-color: #3A3B3C;
   padding: 9px 14px;
   border-radius: 1000px;
   height: 34px;
@@ -166,7 +164,7 @@ function AlurakutMenuProfileSidebar({ githubUser }) {
   return (
     <div className="alurakutMenuProfileSidebar">
       <div>
-        <img src={`https://github.com/${githubUser}.png`} style={{ borderRadius: '8px' }} />
+        <img id="menuHamburguer" src={`https://github.com/${githubUser}.png`} style={{ borderRadius: '8px' }} />
         <hr />
         <p>
           <a className="boxLink" href={`/user/${githubUser}`}>
@@ -174,12 +172,13 @@ function AlurakutMenuProfileSidebar({ githubUser }) {
           </a>
         </p>
         <hr />
-
         <AlurakutProfileSidebarMenuDefault />
       </div>
     </div>
+    
   )
 }
+
 
 // ================================================================================================================
 // AlurakutProfileSidebarMenuDefault
@@ -220,9 +219,12 @@ export function AlurakutProfileSidebarMenuDefault() {
   )
 }
 AlurakutProfileSidebarMenuDefault.Wrapper = styled.div`
+
+  background: #333333;
+
   a {
     font-size: 12px;
-    color: #2E7BB4;
+    color: #E4E6EB;
     margin-bottom: 16px;
     display: flex;
     align-items: center;
@@ -290,7 +292,7 @@ OrkutNostalgicIconSet.List = styled.ul`
   flex-wrap: wrap;
   li {
     font-size: 12px;
-    color: #5A5A5A;
+    color: #E4E6EB;
     display: grid;
     grid-template-areas:
       "title title"

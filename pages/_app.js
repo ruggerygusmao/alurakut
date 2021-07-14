@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
 body {
    
     font-family: sans-serif;
-    background-color: #D9E6F6;
+    background-color: #1c1e21;
   }
 
   #__next{
@@ -25,6 +25,14 @@ body {
     max-width: 100%;
     height: auto;
     display: block;
+  }
+
+  .kEuhLI .alurakutMenuProfileSidebar{
+    background: #333333;
+  }
+
+  .alurakutMenuProfileSidebar #menuHamburguer{
+    max-width: 50%;
   }
 
   ${AlurakutStyles}
